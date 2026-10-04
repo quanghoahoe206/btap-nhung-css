@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>3 Cách Nhúng CSS Vào Trang Web</title>
+
+    <!-- Phần 3: External CSS (Nhúng tệp style.css bên ngoài) -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Phần 2: Internal CSS (Sử dụng thẻ <style> đặt trong <head>) -->
+    <style>
+        .internal-title {
+            color: #2b6cb0;
+            font-size: 22px;
+        }
+        .internal-text {
+            color: #2c5282;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 40px; background-color: #f7fafc;">
+
+    <h1>Thực hành 3 cách nhúng CSS</h1>
+
+    <!-- Phần 1: Inline Style (Khai báo trực tiếp qua thuộc tính style của thẻ) -->
+    <section style="background-color: #ffffff; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+        <h2 style="color: #c53030; font-size: 22px;">Phần 1: Tiêu đề dùng Inline Style</h2>
+        <p style="color: #9b2c2c; line-height: 1.6;">
+            Đoạn văn này được định dạng màu sắc trực tiếp bằng thuộc tính <code>style="..."</code> ngay bên trong thẻ HTML.
+        </p>
+    </section>
+
+    <!-- Phần 2: Internal Style (Áp dụng class định nghĩa trong thẻ <style>) -->
+    <section style="background-color: #ffffff; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+        <h2 class="internal-title">Phần 2: Tiêu đề dùng Internal Style</h2>
+        <p class="internal-text">
+            Đoạn văn này được định dạng màu sắc bằng cách sử dụng thẻ <code>&lt;style&gt;</code> đặt trong phần <code>&lt;head&gt;</code> của trang HTML.
+        </p>
+    </section>
+
+    <!-- Phần 3: External Style (Áp dụng class từ file style.css riêng biệt) -->
+    <section style="background-color: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+        <h2 class="external-title">Phần 3: Tiêu đề dùng External Style</h2>
+        <p class="external-text">
+            Đoạn văn này được định dạng màu sắc từ một tệp tin riêng biệt (<code>style.css</code>) được liên kết qua thẻ <code>&lt;link&gt;</code>.
+        </p>
+    </section>
+
+</body>
+</html>
